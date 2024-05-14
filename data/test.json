@@ -1,0 +1,5 @@
+{
+  "body": [
+    "{\r\n    \"compilerOptions\": {\r\n        \"target\": \"ESNext\",\r\n        \"lib\": [\"ESNext\"],\r\n        \"module\": \"ESNext\",\r\n        \"moduleResolution\": \"Bundler\",\r\n        \"resolveJsonModule\": true,\r\n        \"strict\": true,\r\n        \"strictNullChecks\": true,\r\n        \"esModuleInterop\": true,\r\n        \"skipDefaultLibCheck\": true,\r\n        \"skipLibCheck\": true\r\n      }\r\n}"
+  ]
+}

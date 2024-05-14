@@ -1,0 +1,30 @@
+{
+  "name": "tinypool-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build:worker": "esbuild ./src/worker/index.ts ./src/worker/sub.ts --format=esm --target=node20 --platform=node --outdir=./src/worker",
+    "build:worker2": "esbuild ./test/worker/index.ts ./test/worker/sub.ts --format=esm --target=node20 --platform=node --outdir=./test/worker",
+    "test": "pnpm run build:worker && tsx ./src/index.ts",
+    "test2": "pnpm run build:worker2 && tsx ./test/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/rollup-win32-x64-msvc": "^4.17.2",
+    "@types/node": "^20.12.11",
+    "bunchee": "^5.1.5",
+    "esbuild": "^0.21.1",
+    "poolifier": "^4.0.6",
+    "tinypool": "^0.9.0",
+    "tsx": "^4.9.4",
+    "unconfig": "^0.3.13",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.11"
+  }
+}
